@@ -56,9 +56,9 @@ add_shortcode('plusone', 'plusone_shortcode');
 function plusone_script() {
 ?>
   <script>
-    (function() {
-      jQuery('<script>', {async:true, src:'https://apis.google.com/js/plusone.js'}).prependTo('script:first');
-    })();
+    var plus = document.createElement('script'); plus.async = true;
+    plus.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(plus, s);
   </script>
 <?php
 }
