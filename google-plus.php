@@ -4,6 +4,8 @@ Plugin Name: Google+ Tools
 Description: Google+ tools, such as +1 button and rel="author" links
 Author: Will Norris
 Author URI: http://willnorris.com/
+License: Apache 2.0
+License URI: https://www.apache.org/licenses/LICENSE-2.0
 */
 
 
